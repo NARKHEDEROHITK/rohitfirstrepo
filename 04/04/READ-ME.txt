@@ -1,0 +1,24 @@
+
+Assignemnt: Create a responsive web page using Bootstrap 
+--------------------------------------------------------- 
+Notes:
+
+1) Use Bootstrap framework to complete this assignment. Instead of changing the Bootstrap's styles, override them. (Always keep Bootstrap's CSS intact)
+
+2) Measure and implement layout column width as shown in the mockup.
+
+3) Make use of Bootstrap's glyphicons wherever icons are to be displayed.
+
+4) Although this is a desktop view (and tablet and mobile view are not provided), use your own judgement to create appropriate layout scheme for these devices. 
+
+5) Use googles web font 'Lato' for this assignment. Use font-embedd method.
+
+6) Check your completed assignment in various browsers to check for cross-browser compatibility
+
+
+
+
+
+
+
+

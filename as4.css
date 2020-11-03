@@ -1,0 +1,303 @@
+/*index
+1.fonts
+2.universal selector
+3.common containers
+4.single containers
+5.media querry tablet
+6.media query small
+7.media querry extra small
+*/
+
+/* 1.=========================================fonts==============================================*/
+@font-face{
+    font-family: regular;
+    src: url("Lato/Lato-Regular.ttf");
+}
+@font-face{
+    font-family: boldd;
+    src: url("Lato/Lato-Bold.ttf");
+}
+@font-face{
+    font-family: light;
+    src: url("Lato/Lato-Light.ttf");
+}
+/* 2.=========================================Universal selctors==============================================*/
+
+
+*{
+    box-sizing: border-box;
+    word-wrap: break-word;
+}
+body{
+    font-family: regular;
+}
+/*=========================================common container==============================================*/
+
+.word-wrap{
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.bg-blue{
+    background-color: #53ade9;
+}
+.blue{
+    color: #53ade9;
+}
+.bold{
+    font-family: boldd;
+}
+.semibold{
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.red-orange{
+    color: #e17950;
+}
+.bg-l-grey{
+    background-color: #f1f0f0;
+}
+
+.rem-point-8{
+    font-size: 0.8rem;
+}
+.rem-point-9{
+    font-size: 0.9rem;
+}
+.rem-point-7{
+    font-size: 0.7rem;
+}
+
+/*=========================================single container==============================================*/
+
+header{  
+    background-color: #53ade9;  
+}
+.logins button{
+    background-color: #4694c8;   
+}
+.search-icon{
+    border: .1px solid #4694c8;
+    border-left: none;
+    height: 32px;
+    width: 38px;
+    background-color: #4694c8;
+}
+.search-icon:focus{
+    outline: none;
+}
+.home{
+    padding: 0.25rem;
+}
+.search-icon i{
+    color: white;
+}
+input[type="text"]{
+    color: white;
+    background-color: transparent;
+    padding: 2px 10px;
+    width: 180px;
+    height: 32px;
+    outline: none;
+    border: 1px solid #4694c8; 
+    font-size: .8rem;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+input[type="text"]::placeholder{
+    color: white;
+}
+.map-marker{
+    font-family: light;
+    font-size: 2rem;  
+}
+.visible{
+    border: 2px solid white;
+    color: white;
+}
+
+.financing-option{
+    font-size: 18px;
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+.financing-option:focus{
+    outline: none;
+}
+.open-house{
+    font-size: 1.5rem;
+}
+.open-timing{
+    font-size: 1.2rem;
+}
+
+.location-icon{
+    font-size: 1.3rem;
+}
+.li-hover:hover{
+    background-color: #53ade9;
+}
+.li-hover:focus{
+    background-color: #53ade9;
+    outline: none;
+}
+.border-none{
+    border: none;
+}
+.option-images{
+    margin-bottom: 40px;
+}
+.link-hover{
+    color: white;
+}
+.link-hover:hover{
+    background-color: white;
+    color: #53ade9;
+}
+.border-b{
+    border-bottom: 1px solid lightgrey;
+}
+
+.pentagon {
+    top: 5px;
+    right: 5%;
+}
+ 
+.rectangle {
+    background: #53ADE9;
+    position: relative;
+    z-index: 1;
+    width: 107px;
+    font-size: 1.2rem;
+}
+ 
+.triangle {
+    position: absolute;
+    bottom: -25px;
+    right: 0px;
+    width: 107px;
+    z-index: 1;
+    border-top: 25px solid #53ADE9;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+}
+
+ 
+ 
+  .sub-text{
+      font-family: light;
+  }
+  .copyright-color{
+      color: #c9d1d6;
+  }
+/*=========================================media tablet==============================================*/
+
+
+
+
+/*=========================================media mobile==============================================*/
+
+@media screen and (max-width:767px) and (min-width:577px){
+        .logins button{  
+            width: 100%;
+        }
+        .logins{
+            margin-bottom: 10px;
+        }
+        .logins:last-child{
+            margin-bottom: 0px;
+        }
+        .visible:focus{
+            outline: none;
+        }
+      input[type="text"]{
+          width: 87%;
+          height: 42px;
+          padding: 10px 10px;
+          margin-bottom: 20px;
+      }
+      .search-icon{
+          height: 42px;
+          width: 13%;
+      }
+      .link-hover:hover{
+        padding-left: 200px;
+        padding-right: 200px;
+        margin-left: -200px;
+        margin-right: -200px;
+      }
+
+      .rectangle {
+        width: 70px;
+        font-size: 0.9rem;
+    }
+     
+    .triangle {
+        width: 70px;
+        border-top: 25px solid #53ADE9;
+        border-left: 30px solid transparent;
+        border-right: 30px solid transparent;
+    }
+      
+}
+
+/*=========================================media extra small==============================================*/
+
+@media screen and (max-width:576px){
+    .logins button{  
+      width: 100%;
+    }
+    .logins{
+        margin-bottom: 10px;
+    }
+    .logins:last-child{
+        margin-bottom: 0px;
+    }
+    input[type="text"]{
+        width: 87%;
+        height: 42px;
+        padding: 10px 10px;
+        margin-bottom: 20px;
+    }
+    
+    .toggle-icon{
+        font-size: 20px;
+    }
+    .search-icon{
+        width: 13%;
+        height: 42px;
+    }
+    .visible:focus{
+        outline: none;
+    }
+   
+    .brand{
+        width: 230px;
+    
+    }
+    footer ul li a{
+        padding: 0.1rem;
+        font-size: 10px;
+    }
+
+    .rectangle {
+        width: 70px;
+        font-size: 0.9rem;
+    }
+     
+    .triangle {
+        width: 70px;
+        border-top: 25px solid #53ADE9;
+        border-left: 30px solid transparent;
+        border-right: 30px solid transparent;
+    }
+      .link-hover:hover{
+        padding-left: 30px;
+        padding-right: 30px;
+        margin-left: -30px;
+        margin-right: -30px;
+      }
+
+}
+     
+
